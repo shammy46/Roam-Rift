@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-font: "Mulish", sans-serif;
+    --second-font: "Inter", sans-serif;
+    --main-color: #ff5400;
+    --heading-color: #131318;
+    --text-color: #131318b3;
+  }
+
+body {
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/* navbar */
+header {
+    /* background-color: pink; */
+    margin-top: 50px;
+}
+
+.navbar-section {
+    max-width: 1170px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.nav-container {
+    /* border: 2px solid blue; */
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+
+}
+
+.nav-container img {
+    width: 48px;
+    object-fit: cover;
+}
+
+.nav-container p {
+    font-weight: 800;
+    font-size: 36px;
+
+}
+
+.nav-special {
+    color: #FF5400;
+}
+
+.items-container  {
+    width: 50%;
+    /* border: 2px solid yellow; */
+    /* border: 2px solid yellow; */
+    
+}
+
+.items-container a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.items-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 20px
+}
+
+.items-container a:hover {
+    color: #FF5400;
+    cursor: pointer;
+}
+
+/* banner */
+.banner {
+    /* border: 2px solid pink; */
+    max-width: 1170px;
+    min-height: 500px;
+    margin: 50px auto;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 80px;
+
+}
+
+.banner h1 {
+    color: white;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.banner p {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 24px 150px;
+}
+
+/* .banner-content {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 48px 100px;
+    width: 800px;
+
+
+}
+
+
+input,
+select {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    padding: 16px;
+
+
+}
+
+ */
+ .input-field {
+    display: flex;
+    margin: 48px auto auto auto;
+    width: 70%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    gap: 16px;
+  }
+  .input-field input,
+  #pet-select,
+  .search-btn {
+    color: rgba(19, 19, 24, 0.5);
+    font-family: var(--main-font);
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+    width: 174px;
+    height: 52px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  .search-btn {
+    display: flex;
+    background-color: var(--main-color);
+    color: #fff;
+    align-items: center;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:600px) {
+
+    .navbar-section,
+    .items-container ul,
+    .banner {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+
+    }
+
+    .banner {
+        width: 335px;
+        height: 483px;
+        flex-shrink: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: 2px solid red;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+    }
+
+    .banner p {
+        text-align: center;
+        
+        
+        border: 2px solid yellow;
+        padding: 1px
+      
+
+
+
+
+    }
+    .banner-content{
+        flex-direction: column;
+    }
+    input, select{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
