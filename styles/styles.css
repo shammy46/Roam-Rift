@@ -12,6 +12,7 @@
     --main-color: #ff5400;
     --heading-color: #131318;
     --text-color: #131318b3;
+    
 }
 
 body {
@@ -54,7 +55,7 @@ header {
 }
 
 .nav-special {
-    color: #FF5400;
+    color: var(--main-color);
 }
 
 .items-container {
@@ -80,7 +81,7 @@ header {
 }
 
 .items-container a:hover {
-    color: #FF5400;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -366,9 +367,11 @@ select {
     flex-shrink: 0;
     border-radius: 16px;
     margin-bottom: 20px;
+    margin-top: 20px;
 
 }
- .deals-content {
+
+.deals-content {
     border-radius: 16px;
     border: 2px solid #FFF;
     background: rgba(255, 255, 255, 0.80);
@@ -378,8 +381,47 @@ select {
     width: 500px;
     height: 350px;
     position: absolute;
+    
+}
+.discount{
     top: 10%;
     left: 55%;
+    padding: 30px
+}
+#discount{
+    top: 10%;
+    right: 55%;
+    padding: 30px;
+}
+
+.deals-content li {
+    display: inline;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.deals-content li i {
+    color: var(--main-color);
+
+}
+.deals-caption{
+    color: var(--heading-color);
+font-size: 24px;
+font-weight: 800;
+margin-top: 20px;
+
+}
+.deals-info{
+    color: #5A5A5D;
+    margin-top: 20px;
+
+}
+.deals-price {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -466,10 +508,13 @@ select {
 
     .choose-content {
         /* border: 2px solid green; */
-       flex-direction: column;
-    
+        flex-direction: column;
+
     }
-    .list-1,.list-2,.list-3{
+
+    .list-1,
+    .list-2,
+    .list-3 {
         width: 100%;
     }
 
